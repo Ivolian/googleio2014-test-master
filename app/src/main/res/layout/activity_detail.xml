@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:io="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.android.io2014.DetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo1"
+                android:tint="#7f101010"
+                android:transitionName="photo" />
+
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:id="@+id/title"
+                android:scaleY="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:text="Pacifica Pier"
+                android:transformPivotY="0dp"
+                android:textSize="40sp" />
+
+            <TextView
+                android:scaleY="0"
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="12dp"
+                android:lineSpacingMultiplier="1.2"
+
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget interdum ante, at adipiscing ipsum. Phasellus pellentesque commodo libero, id volutpat ipsum pretium at. Duis sit amet egestas nisi. Donec id dui eu lectus volutpat posuere. Nunc et viverra ante, vel malesuada tortor. Pellentesque ut interdum tellus, sit amet hendrerit dui. Sed accumsan, nisl eu tincidunt tempus, neque lorem sodales odio, non tristique orci lorem quis augue. In sodales rutrum faucibus. Morbi egestas massa sit amet ante pellentesque, eu laoreet ante congue. Sed aliquet, dolor ac placerat pellentesque, risus leo fermentum quam, eget eleifend tellus nulla euismod tellus. Donec adipiscing cursus leo et faucibus. Aliquam erat volutpat."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="372dp"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/ic_fab_star" />
+
+
+    </FrameLayout>
+
+</ScrollView>
